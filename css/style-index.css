@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+*{
+    color: rgb(230, 230, 230);
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+}
+
+/*selectores de etiqueta*/
+
+html{
+	font-size: 62.5%;
+}
+
+a{
+    color: #0DF205;
+    font-size: 1.5rem;
+}
+
+h1{
+    color: #141414;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: 1rem;
+	word-spacing: 1.5rem;
+    margin: 4rem;
+    padding: 2rem;
+}
+
+h2{
+    font-size: 2.3rem;
+    font-weight: 590;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+h3{
+    font-size: 2rem;
+    font-weight: 590;
+    padding: 1rem;
+    margin-left: 4rem;
+}
+
+h4{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+h2, h3, h4{
+    color: #141414;
+}
+
+p {
+    color: #141414;
+    font-size: 1.5rem;
+    letter-spacing: 0.2px;
+	word-spacing: 3px;
+    padding: 2rem;
+}
+
+aside p{
+    color: rgb(230, 230, 230);
+    font-size: 1.5rem;
+    letter-spacing: 0.2px;
+	word-spacing: 3px;
+    padding: 2rem;
+}
+
+div{
+    color: rgb(230, 230, 230);
+    font-size: 1.5rem;
+    letter-spacing: 0.2px;
+	word-spacing: 2px;
+    padding: 1rem;
+}
+
+ul{
+    padding: 10px 40px;
+    margin-left: 5rem;
+}
+
+header{
+    background-color: #003434;
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 30vh; */
+}
+
+header img {
+    width: 30vw;
+}
+
+header form{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50vw;
+    /* padding: 9rem 2rem 2rem 6rem;  */
+}
+
+header div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    /* margin: 88px 100px 10px 10px; */
+}
+
+header div svg{
+    margin: 0 10px;
+}
+
+/* header form input{
+    padding: 8px;
+}
+
+form{
+    margin: 5vh 35vh 20vh 10vh; 
+}
+
+form fieldset{
+    padding: 2vh 10vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+form fieldset input{
+    margin-top: 2vh;
+    margin-bottom: 2vh; 
+}
+
+form fieldset label{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+form fieldset select{
+    margin-top: 2vh;
+    margin-bottom: 2vh; 
+}
+
+form label{
+    margin-top: 2vh;
+    margin-bottom: 4vh; 
+}
+
+form input{
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+} */
+
+section article ul li{
+    color: #cbd4ce;
+    font-size: 1.5rem;
+    letter-spacing: 0.2px;
+	word-spacing: 3px;
+}
+
+section article ul li b{
+    color: #cbd4ce;
+    font-size: 1.5rem;
+    letter-spacing: 0.2px;
+	word-spacing: 3px;
+}
+
+form{
+    color: rgb(230, 230, 230);
+    font-weight: 500;
+}
+
+label{
+    font-size: 1.5rem;
+}
+
+input{
+    color: #141414;
+}
+
+select{
+    color: black;
+}
+
+option{
+    color: black;
+}
+
+footer{
+    background-color: black;
+}
+
+footer section ul{
+    list-style: none;
+}
+
+footer section ul li{
+    color: #cbd4ce;
+    font-size: 1.5rem;
+}
+
+footer section h4{
+    color: #cbd4ce;
+    font-size: 1.8rem;
+}
+
+footer iframe{
+    margin: 20px;
+}
+
+footer h4{
+    padding: 10px;
+    margin-left: 40px;
+}
+
+/*selectores de clase*/
+
+.grid{
+    display: grid;
+    width: 100%;
+}
+
+    
+
+
+    .template-areas-index {
+        grid-template-columns: 1fr;
+        grid-template-areas: "cabeza" "nav1" "p" "pie";
+    }
+
+    
+
+    #cabeza{
+        grid-area: cabeza;
+        /* background-color: #003434; */
+    }
+
+    #nav1{
+        grid-area: nav1;
+    }
+
+    #principal {
+        grid-area: p;
+        
+    }
+
+
+    #pie{
+        grid-area: pie;
+        background-color: #141414;
+    }
+
+/*==================================================*/   
+.menu{
+    background-color: #141414;
+    position: sticky;
+    /* top: 0; */
+}
+
+.menu ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* justify-content:space-between; */
+}
+
+.menu ul li{
+    list-style: none;
+    width: 25%;
+    text-align: center;
+    /* display: inline-block; */
+}
+
+.menu ul li a{
+    color: white;
+    font-size: 2rem;
+    padding: 12px 0;
+    display: block;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.menu ul li a:hover{
+    background-color: rgb(71, 71, 71);
+}
+
+.menu ul li ul {
+    position: absolute;
+    display: none;
+}
+
+.menu ul li ul li {
+    background-color: #141414;
+    display: block;
+    }
+
+.menu ul li:hover ul {
+    display:block;
+    width: 100%;
+    }
+
+
+.textActive {    
+    color: #0DF205 !important;
+}
+
+.container{
+    display: flex;
+    padding: 20px;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.box{
+	border:solid 1px rgb(197, 197, 197);
+	margin: 4px;
+    background-color: rgb(255, 255, 255);
+}
+
+.box p{
+    color: black;
+    font-size: 1.5rem;
+    letter-spacing: 0.2px;
+	word-spacing: 3px;
+    padding: 2rem;
+}
+
+.w-30{
+    width: 30%;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.text-center{
+	text-align: center; 
+}
+
+/*selectores id*/
+
+#buscador{
+    width: 40vw;
+}
+
+#boton-buscar{
+    width: 10vw;
+}
+
+/* #logo{
+    height: 30vh;
+} */
+
+.template-areas-main {
+    grid-template-columns: 60% 40%;
+    grid-template-areas: "p p" "o c" "n n";
+    background-color: #cbd4ce;
+}
+
+#presentacion {
+    grid-area: p;
+}
+
+#ofertas{
+
+    padding: 20px;
+    border: solid 5px  rgb(194, 194, 194);
+    grid-area: o;
+}
+
+#ofertas img {
+    width: 45% ;
+}
+
+#comentarios{
+    grid-area: c;
+    padding: 20px;
+}
+
+#comentarios article p{
+    background-color: #006A6B;
+}
+
+#noticias{
+    grid-area: n;
+    
+}
